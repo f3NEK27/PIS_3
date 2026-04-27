@@ -485,4 +485,6 @@ if __name__ == '__main__':
 
     X_train, y_train = manager.get_training_data()
     X_test,  y_test  = manager.get_testing_data()
+    print("\nПервые строки предобработанной обучающей выборки:")
+    print(X_train.head(10).to_string())
     print(f"\nГотово: X_train {X_train.shape}, X_test {X_test.shape}")
